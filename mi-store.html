@@ -12,17 +12,15 @@
         
         /*头部导航*/
         /*左侧*/
-        .mi .header-nav {
-            height: 40px;
-            background-color: #333;
-        }
-        .mi .header-nav-left{margin-left: 65px;}
+        .header-box{ background-color: #333;}
+        .mi .header-nav {  width: 1226px ;  margin: 0 auto;  height: 40px;   }
+        .mi .header-nav-left{float: left;}
         .mi .header-nav-left li{float:left;padding: 0 5px;}
         .mi .header-nav-left li a{color:#b0b0b0;text-decoration: none;font-size: 12px;line-height: 40px;}
         .mi .header-nav-left li a:hover{color:white;}
          .bar{margin-left: 8px; color: #828282;font-size: 12px;}
         /*右侧*/
-        .mi .header-nav-right{margin-left:1030px;}
+        .mi .header-nav-right{float: right;}
         .mi .header-nav-right li{float: left;padding: 0 5px;}
         .mi .header-nav-right li a{color:#b0b0b0;text-decoration: none;font-size: 12px;line-height: 40px;}
         .mi .header-nav-right li a:hover{color:white;}
@@ -153,7 +151,8 @@
 </head>
 <body>
     <div class="mi">
-        <div class="header-nav">
+        <div class="header-box">
+            <div class="header-nav">
                 <ul class="header-nav-left">
                     <li><a href="">小米商城</a><span class="bar">|</span></li>
                     <li><a href="">MIUI</a><span class="bar">|</span></li>
@@ -171,6 +170,7 @@
                     <li class="buy-car"><a href=""></a></li>
                 </ul>
             </div>
+        </div>
         <div class="nav2">
                 <a href=""><img src="./img-mi/mi-logo.png" alt=""></a>
                 <ul class="nav2-item">
