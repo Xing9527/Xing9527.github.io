@@ -22,7 +22,7 @@
         .mi .header-nav-left li a:hover{color:white;}
          .bar{margin-left: 8px; color: #828282;font-size: 12px;}
         /*右侧*/
-        .mi .header-nav-right{margin-left: 1040px;}
+        .mi .header-nav-right{margin-left:1030px;}
         .mi .header-nav-right li{float: left;padding: 0 5px;}
         .mi .header-nav-right li a{color:#b0b0b0;text-decoration: none;font-size: 12px;line-height: 40px;}
         .mi .header-nav-right li a:hover{color:white;}
@@ -31,23 +31,23 @@
             background: url("./img-mi/02.png");}
 
         /*第二个导航*/
-        .nav2{width:90%;margin: 20px auto;position: relative;}
+        .nav2{width:1226px;margin: 20px auto;position: relative;}
         .nav2 .nav2-item{margin-left: 220px;}
         .nav2 .nav2-item li{float: left;padding-left: 20px;height: 50px;}
         .nav2 .nav2-item li a{color: #757575;text-decoration: none;line-height: 50px;}
         .nav2 .nav2-item li a:hover{color: #ff6709;}
-        .nav2 .search-text input{height: 46px;width:230px;margin-right: 40px;float: right;}
-        .nav2 .search-text .item1{position: absolute;left:1020px;top: 16px;font-size: 13px; background-color: gainsboro;}
-        .nav2 .search-text .item2{position: absolute;left:1090px;top: 16px;font-size: 13px; background-color: gainsboro;}
+        .nav2 .search-text input{height: 46px;width:230px;float: right;}
+        .nav2 .search-text .item1{position: absolute;right:70px;top: 16px;font-size: 13px; background-color: gainsboro;}
+        .nav2 .search-text .item2{position: absolute;right: 150px;top: 16px;font-size: 13px; background-color: gainsboro;}
         .nav2 .search-text  .item1:hover{background-color: #ff6709;color: white;}
         .nav2 .search-text  .item2:hover{background-color: #ff6709;color: white;}
         .nav2 .search-btn input{width: 50px; height: 50px; background: url("./img-mi/search1.png") no-repeat;
-            float: right;position: absolute;right: -10px;top: 0;}
+            float: right;border: none;border: 1px solid #b0b0b0;border-left: none;}
         .nav2 .search-btn input:hover{ background: url("./img-mi/search2.png") no-repeat;}
         .nav2 img{position: absolute;left: 0;top: 0;}
 
         /*轮播图*/
-        .big-pic{width: 90%;margin:0 auto ;padding-top: 25px;clear: both;position: relative;}
+        .big-pic{width:1226px;margin:0 auto ;padding-top: 25px;clear: both;position: relative;}
         .side-nav{width: 235px; background-color: rgba(0,0,0,0.6);position: absolute;left: 0;top: 25px;height: 460px;}
         .side-nav ul{margin: 18px 0;}
         .side-nav li{height: 43px;}
@@ -56,11 +56,11 @@
         .side-nav a::after{content: ">";color: white;float: right;margin-right: 50px;font-size: 16px;font-weight: bold;}
 
         /*四个图片导购*/
-        .mi .pic4{width: 92%;margin: 10px auto;clear: both;}
-        .mi .pic4 .pic4-left{float: left;margin-left:13px;width: 234px;height: 170px;
+        .mi .pic4{width:1226px;margin: 10px auto;clear: both;}
+        .mi .pic4 .pic4-left{float: left;;width: 234px;height: 170px;
             background-color: rgba(0,0,0,.8);padding: 12px 8px;box-sizing: border-box;}
         .mi .pic4 .pic4-right{float: right;}
-        .mi .pic4 .pic4-right li{float:left;margin-left: 15px;}
+        .mi .pic4 .pic4-right li{float:left;margin-left: 14px;}
         .mi .pic4 .pic4-right .pic4-4{width: 316px;height: 170px;}
         .mi .pic4 .pic4-left li{float: left;border: 1px solid #665e57;padding: 15px 0;}
         .mi .pic4 .pic4-left li a{display: inline-block;width:70px;
@@ -185,13 +185,12 @@
                     <li><a href="">社区</a></li>
                 </ul>
                 <form action="">
+                    <div class="search-btn"><input type="button"></div>
                     <div class="search-text">
                         <input type="text">
                         <a href=""><span class="item1">红米5 新品</span></a>
                         <a href=""><span class="item2">小米Note 3</span></a>
                     </div>
-                    <div class="search-btn"><input type="button"></div>
-
                 </form>
             </div>
         <div class="big-pic">
