@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: pink;
+        }
+        h1{
+            text-align: center;
+            color: aqua;
+            margin-top: 30px;
+        }
+        input{
+            display: none;
+        }
+        .box{
+            width: 1100px;
+            margin: 50px auto;
+        }
+        label{
+            float: left;
+            position: relative;
+            width: 228px;
+            height: 353px;
+            margin-right: 15px;
+            transform-style: preserve-3D;
+            transition: transform 1s linear;
+        }
+        img{
+            position: absolute;
+            left:0;
+            top:0;
+        }
+        .reset{
+            color: #555;
+            width: 60px;
+            height: 30px;
+            border: 1px solid red;
+            text-align: center;
+            line-height: 30px;
+            background-color: paleturquoise;
+            margin-left: 20px;
+        }
+        label img:nth-of-type(2){
+            transform: rotateY(180deg);
+        }
+        input:nth-of-type(1):checked~.box>label:nth-of-type(1){
+            transform: rotateY(180deg);
+        }
+        input:nth-of-type(2):checked~.box>label:nth-of-type(2){
+            transform: rotateY(180deg);
+        }
+        input:nth-of-type(3):checked~.box>label:nth-of-type(3){
+            transform: rotateY(180deg);
+        }
+        input:nth-of-type(4):checked~.box>label:nth-of-type(4){
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>请选择你的男神</h1>
+    <input type="radio" id="pic1" name="puke">
+    <input type="radio" id="pic2" name="puke">
+    <input type="radio" id="pic3" name="puke">
+    <input type="radio" id="pic4" name="puke">
+    <input type="radio" id="reset" name="puke">
+    <div class="box">
+        <label for="pic1"><img src="./man-imgs/puke.jpg" alt=""><img src="./man-imgs/01.png" alt=""></label>
+        <label for="pic2"><img src="./man-imgs/puke.jpg" alt=""><img src="./man-imgs/02.png" alt=""></label>
+        <label for="pic3"><img src="./man-imgs/puke.jpg" alt=""><img src="./man-imgs/03.png" alt=""></label>
+        <label for="pic4"><img src="./man-imgs/puke.jpg" alt=""><img src="./man-imgs/04.png" alt=""></label>
+        <label for="reset" class="reset">清空</label>
+    </div>
+</body>
+</html>
