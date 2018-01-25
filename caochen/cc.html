@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>曹小晨个人相册</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #000;
+        }
+        h1{
+            color: wheat;
+            width: 370px;
+            margin: 50px auto;
+        }
+        .box{
+            width: 500px;
+            margin: 100px auto;
+            overflow: hidden;
+        }
+        ul{
+            width: 4000px;
+            list-style-type: none;
+        }
+        li{
+            float: left;
+        }
+        img{
+            width: 300px;
+        }
+        ul{
+            animation: fun 10s linear;
+            animation-iteration-count: infinite;
+        }
+        .box:hover ul{
+            animation-play-state: paused;
+        }
+        .box:hover li{
+            opacity: .4;
+        }
+        .box ul li:hover{
+            opacity: 1;
+        }
+        @keyframes fun {
+            from{
+                transform: translateX(0);
+            }
+            to{
+                transform: translateX(-3000px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>曹小晨个人相册无限播放</h1>
+    <div class="box">
+        <ul>
+            <li><img src="./imgs-cc/01.png" alt=""></li>
+            <li><img src="./imgs-cc/02.png" alt=""></li>
+            <li><img src="./imgs-cc/03.png" alt=""></li>
+            <li><img src="./imgs-cc/04.png" alt=""></li>
+            <li><img src="./imgs-cc/05.png" alt=""></li>
+            <li><img src="./imgs-cc/06.png" alt=""></li>
+            <li><img src="./imgs-cc/07.png" alt=""></li>
+            <li><img src="./imgs-cc/08.png" alt=""></li>
+            <li><img src="./imgs-cc/09.png" alt=""></li>
+            <li><img src="./imgs-cc/10.png" alt=""></li>
+            <li><img src="./imgs-cc/01.png" alt=""></li>
+            <li><img src="./imgs-cc/02.png" alt=""></li>
+        </ul>
+    </div>
+</body>
+</html>
